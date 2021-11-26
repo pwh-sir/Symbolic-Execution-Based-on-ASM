@@ -1,0 +1,13 @@
+digraph test1{
+start -> node0;
+node0 -> node1[label ="true"];
+node1 -> node2[label ="true"];
+node1 -> node3[label ="false"];
+node0 -> node4[label ="false"];
+start;
+node0[label =" x > y && y > 0"];
+node1[label =" 2 * x - 3 * y > 0 && y >= 1"];
+node2[label =" 5 * x > 100"];
+node3[label =" 36 * y <= 100"];
+node4[label =" x > 40"];
+}

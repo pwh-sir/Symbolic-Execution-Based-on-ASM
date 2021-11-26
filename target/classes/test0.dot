@@ -1,0 +1,7 @@
+digraph test0{
+start -> node0;
+node0 -> node1[label ="true"];
+start;
+node0[label =" x > y && y > 0"];
+node1[label =" x - 2 * y > 0"];
+}

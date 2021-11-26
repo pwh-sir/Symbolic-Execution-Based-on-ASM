@@ -1,0 +1,25 @@
+digraph test1{
+start -> node0;
+node0 -> node1[label ="true"];
+node1 -> node2[label ="true"];
+node1 -> node3[label ="false"];
+node0 -> node4[label ="false"];
+node2 -> node5[label = "true"];
+node2 -> node6[label = "false"];
+node3 -> node7[label = "true"];
+node3 -> node8[label = "false"];
+node4 -> node9[label = "true"];
+node4 -> node10[label = "false"];
+start;
+node0[label =" x > y && y > 0"];
+node1[label =" 2 * x - 3 * y > 0 && y >= 1"];
+node2[label =" 5 * x > 100"];
+node3[label =" 36 * y <= 100"];
+node4[label =" x > 40"];
+node5[label ="x = 21 y = 1"];
+node6[label = "x = 2 y = 1"];
+node7[label = "x = 3 y = 2"];
+node8[label = "x = 4 y = 3"];
+node9[label = "x = 41 y = 41"];
+node10[label = "x = 0 y = 0"];
+}

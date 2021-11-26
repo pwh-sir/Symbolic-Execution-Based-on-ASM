@@ -1,0 +1,6 @@
+OPTION "incremental";
+OPTION "produce-models";
+x,y : INT;
+ASSERT x > y AND y > 0;
+CHECKSAT x - y > 0;
+COUNTERMODEL;
